@@ -8,6 +8,11 @@
   "editor.cursorSmoothCaretAnimation": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": "active",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Midnight Synth",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -91,8 +96,5 @@
     "<C-z>": false,
     "<C-y>": false
   },
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Midnight Synth",
   "tabnine.experimentalAutoImports": true
 }
