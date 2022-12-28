@@ -13,88 +13,56 @@
   "workbench.colorTheme": "Midnight Synth",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "vim.easymotion": true,
-  "vim.incsearch": true,
+  /**VIM SETUP**/
+  // VS Code automatically highlights selected words.
+  // "vim.hlsearch": false,
+  "vim.timeout": 200,
   "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.sneak": true,
-  "vim.easymotionMarkerooundColor": "#020202",
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>", "k"],
-      "after": ["<Esc>"]
-    },
-    {
-      "before": ["<tab>"],
-      "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      "before": ["<S-tab>"],
-      "commands": ["workbench.action.previousEditor"]
-    }
-  ],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": ["k", "j"],
+      "after": ["<Esc>", "l"]
     }
   ],
-  "vim.visualModeKeyBindings": [
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-f>": true,
+    "<C-a>": false
+  },
+  "vim.normalModeKeyBindings": [
     {
-      "before": [">"],
-      "after": [">", "g", "v"]
+      "before": ["v", "n"],
+      "after": ["v", "g", "_", "y"]
     },
     {
-      "before": ["<"],
-      "after": ["<", "g", "v"]
+      // find the source definition instead of the .d.ts file
+      // 'f'ind the source 'd'efinition
+      "before": ["f", "d"],
+      "commands": ["typescript.goToSourceDefinition"]
+    },
+    {
+      // df is easier to hit than gd
+      // go to the 'd'e'f'inition
+      "before": ["d", "f"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["d", "n"],
+      "after": ["d", "g", "_"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
       "before": ["<C-n>"],
       "commands": [":nohl"]
-    },
-    {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.splitEditor"]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    },
-    {
-      "before": ["<leader>", "f"],
-      "commands": ["revealInExplorer"]
-    },
-    {
-      "before": ["<leader>", "h"],
-      "after": ["_"]
-    },
-    {
-      "before": ["<leader>", "l"],
-      "after": ["$"]
     }
   ],
-  "vim.leader": "<space>",
-
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false,
-    // VS Code new marker @ next occurence
-    "<C-d>": false,
-    // Copy
-    "<C-c>": false,
-    // Cut
-    "<C-x>": false,
-    // Paste
-    "<C-v>": false,
-    "<C-z>": false,
-    "<C-y>": false
-  },
+  // vim mode viwy viwcmd+d p issue hack
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ],
   "tabnine.experimentalAutoImports": true
 }
