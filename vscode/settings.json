@@ -18,6 +18,7 @@
   "workbench.colorTheme": "Midnight Synth",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
+  
   // ! VIM CONFIG //
   "vim.timeout": 200,
   "vim.easymotion": true,
