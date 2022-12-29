@@ -1,3 +1,8 @@
+/**
+ * * @author: Adam H.M
+ * * github: https://github.com/adamhmid
+ * * instagram: https://www.instagram.com/adamhm.id
+ */
 {
   "update.mode": "manual",
   "files.autoSave": "afterDelay",
@@ -13,56 +18,63 @@
   "workbench.colorTheme": "Midnight Synth",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  /**VIM SETUP**/
-  // VS Code automatically highlights selected words.
-  // "vim.hlsearch": false,
+  // ! VIM CONFIG //
   "vim.timeout": 200,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
   "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.normalModeKeyBindings": [],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["k", "j"],
+      "before": ["j", "j"],
       "after": ["<Esc>", "l"]
     }
   ],
-  "vim.useCtrlKeys": true,
-  "vim.handleKeys": {
-    "<C-f>": true,
-    "<C-a>": false
-  },
-  "vim.normalModeKeyBindings": [
+  "vim.visualModeKeyBindings": [
     {
-      "before": ["v", "n"],
-      "after": ["v", "g", "_", "y"]
+      "before": [">"],
+      "after": [">", "g", "v"]
     },
     {
-      // find the source definition instead of the .d.ts file
-      // 'f'ind the source 'd'efinition
-      "before": ["f", "d"],
-      "commands": ["typescript.goToSourceDefinition"]
-    },
-    {
-      // df is easier to hit than gd
-      // go to the 'd'e'f'inition
-      "before": ["d", "f"],
-      "after": ["g", "d"]
-    },
-    {
-      "before": ["d", "n"],
-      "after": ["d", "g", "_"]
+      "before": ["<"],
+      "after": ["<", "g", "v"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    }
-  ],
-  // vim mode viwy viwcmd+d p issue hack
-  "vim.visualModeKeyBindingsNonRecursive": [
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
     {
-      "before": ["p"],
-      "commands": ["editor.action.clipboardPasteAction"]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<S-f>"],
+      "commands": ["revealInExplorer"]
     }
   ],
+  "vim.leader": "<space>",
+
+  //* Disable or enable shortcuts in the VIM
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-c>": false,
+
+    //* Cut
+    "<C-x>": false,
+
+    //* Paste
+    "<C-v>": false,
+
+    //* Undo or Redo
+    "<C-z>": false,
+    "<C-y>": false
+  },
   "tabnine.experimentalAutoImports": true
 }
