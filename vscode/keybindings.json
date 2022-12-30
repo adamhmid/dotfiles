@@ -29,12 +29,12 @@
 
   //* Move selected text/line to up or down lines.
   {
-    "key": "shift+alt+k",
+    "key": "alt+k",
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+j",
+    "key": "alt+j",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -53,12 +53,12 @@
 
   //* Select Next suggestion or Prev suggestion in the autocomplete.
   {
-    "key": "j",
+    "key": "shift+j",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "k",
+    "key": "shift+k",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
