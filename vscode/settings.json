@@ -77,5 +77,6 @@
     "<C-z>": false,
     "<C-y>": false
   },
-  "tabnine.experimentalAutoImports": true
+  "tabnine.experimentalAutoImports": true,
+  "auto-rename-tag.activationOnLanguage": ["*"]
 }
