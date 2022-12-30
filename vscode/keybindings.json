@@ -73,5 +73,11 @@
     "key": "f",
     "command": "cursorHome",
     "when": "textInputFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+  },
+
+  //* Advanced new file extensions
+  {
+    "key": "ctrl+n",
+    "command": "extension.advancedNewFile",
   }
 ]
