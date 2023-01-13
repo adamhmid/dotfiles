@@ -27,6 +27,20 @@
     "when": "terminal.active"
   },
 
+  //* Create a new Terminal.
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+
+  //* Delete selected terminal.
+  {
+    "key": "alt+'",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminal.active"
+  },
+
   //* Move selected text/line to up or down lines.
   {
     "key": "alt+k",
