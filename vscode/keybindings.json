@@ -10,7 +10,7 @@
     "command": "toggleVim"
   },
 
-  //* Move editor to next editor or previous editor.
+  //* Open previous editor or next editor.
   {
     "key": "ctrl+k",
     "command": "workbench.action.nextEditor"
@@ -34,7 +34,7 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
 
-  //* Delete selected terminal.
+  //* Delete actived terminal.
   {
     "key": "alt+'",
     "command": "workbench.action.terminal.kill",
@@ -65,7 +65,7 @@
     "when": "editorTextFocus && !editorTabMovesFocus && vim.active && vim.mode != 'Insert'"
   },
 
-  //* Select Next suggestion or Prev suggestion in the autocomplete.
+  //* Select Next suggestion or Previous suggestion in the autocomplete.
   {
     "key": "shift+j",
     "command": "selectNextSuggestion",
