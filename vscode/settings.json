@@ -15,7 +15,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.guides.bracketPairs": "active",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Midnight Synth",
+  "workbench.colorTheme": "Midnight Synth Purple",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   
@@ -78,5 +78,9 @@
     "<C-y>": false
   },
   "tabnine.experimentalAutoImports": true,
-  "auto-rename-tag.activationOnLanguage": ["*"]
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.addSemicolonInTheEnd": true
 }
