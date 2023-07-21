@@ -82,5 +82,6 @@
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.addSemicolonInTheEnd": true
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "window.commandCenter": true
 }
