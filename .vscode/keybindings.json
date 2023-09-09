@@ -10,6 +10,12 @@
     "command": "toggleVim"
   },
 
+  //* Close all editors.
+  {
+    "key": "alt+e",
+    "command": "workbench.action.closeAllEditors"
+  },
+
   //* Open previous editor or next editor.
   {
     "key": "ctrl+k",
@@ -92,6 +98,6 @@
   //* Advanced new file extensions
   {
     "key": "ctrl+n",
-    "command": "extension.advancedNewFile",
+    "command": "extension.advancedNewFile"
   }
 ]
