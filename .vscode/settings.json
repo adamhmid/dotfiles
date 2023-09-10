@@ -66,6 +66,7 @@
     "<C-f>": false,
     "<C-b>": false,
     "<C-c>": false,
+    "<C-p>": false,
 
     //* Cut
     "<C-x>": false,
@@ -83,5 +84,8 @@
   "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.insertEnclosingClass": false,
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "window.commandCenter": true
+  "window.commandCenter": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  }
 }
